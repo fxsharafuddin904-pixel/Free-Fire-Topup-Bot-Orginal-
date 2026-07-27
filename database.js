@@ -7,9 +7,13 @@ function loadPackages() {
         fs.writeFileSync(DB_FILE, "[]");
     }
 
-    return JSON.parse(
-        fs.readFileSync(DB_FILE, "utf8")
-    );
+    try {
+        return JSON.parse(
+            fs.readFileSync(DB_FILE, "utf8")
+        );
+    } catch (error) {
+        return [];
+    }
 }
 
 function savePackages(packages) {
@@ -34,9 +38,17 @@ function getPackage(id) {
 function addPackage(data) {
     const packages = loadPackages();
 
-    packages.push(data);
+    packages.push({
+        id: data.id,
+        category: data.category,
+        name: data.name,
+        price: Number(data.price),
+        description: data.description || data.name
+    });
 
     savePackages(packages);
+
+    return true;
 }
 
 function updatePackage(id, data) {
@@ -52,6 +64,10 @@ function updatePackage(id, data) {
         ...packages[index],
         ...data
     };
+
+    if (data.price !== undefined) {
+        packages[index].price = Number(data.price);
+    }
 
     savePackages(packages);
 
