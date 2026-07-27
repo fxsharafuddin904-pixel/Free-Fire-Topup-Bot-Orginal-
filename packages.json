@@ -1,3 +1,152 @@
-{
-  "description": "Package information for the Free Fire TopUp Bot"
-}
+[
+  {
+    "id": "diamond_25",
+    "category": "diamond",
+    "name": "25 Diamond",
+    "price": 25,
+    "description": "💎 25 Diamond"
+  },
+  {
+    "id": "diamond_50",
+    "category": "diamond",
+    "name": "50 Diamond",
+    "price": 42,
+    "description": "💎 50 Diamond"
+  },
+  {
+    "id": "diamond_115",
+    "category": "diamond",
+    "name": "115 Diamond",
+    "price": 85,
+    "description": "💎 115 Diamond"
+  },
+  {
+    "id": "diamond_240",
+    "category": "diamond",
+    "name": "240 Diamond",
+    "price": 170,
+    "description": "💎 240 Diamond"
+  },
+  {
+    "id": "diamond_355",
+    "category": "diamond",
+    "name": "355 Diamond",
+    "price": 249,
+    "description": "💎 355 Diamond"
+  },
+  {
+    "id": "diamond_480",
+    "category": "diamond",
+    "name": "480 Diamond",
+    "price": 347,
+    "description": "💎 480 Diamond"
+  },
+  {
+    "id": "diamond_610",
+    "category": "diamond",
+    "name": "610 Diamond",
+    "price": 448,
+    "description": "💎 610 Diamond"
+  },
+  {
+    "id": "diamond_850",
+    "category": "diamond",
+    "name": "850 Diamond",
+    "price": 568,
+    "description": "💎 850 Diamond"
+  },
+  {
+    "id": "diamond_1240",
+    "category": "diamond",
+    "name": "1240 Diamond",
+    "price": 826,
+    "description": "💎 1240 Diamond"
+  },
+  {
+    "id": "diamond_2530",
+    "category": "diamond",
+    "name": "2530 Diamond",
+    "price": 1680,
+    "description": "💎 2530 Diamond"
+  },
+  {
+    "id": "diamond_5060",
+    "category": "diamond",
+    "name": "5060 Diamond",
+    "price": 3260,
+    "description": "💎 5060 Diamond"
+  },
+  {
+    "id": "diamond_10120",
+    "category": "diamond",
+    "name": "10120 Diamond",
+    "price": 6485,
+    "description": "💎 10120 Diamond"
+  },
+
+  {
+    "id": "weekly",
+    "category": "weekly",
+    "name": "Weekly",
+    "price": 170,
+    "description": "Weekly Membership"
+  },
+  {
+    "id": "monthly",
+    "category": "weekly",
+    "name": "Monthly",
+    "price": 790,
+    "description": "Monthly Membership"
+  },
+
+  {
+    "id": "mistry_1",
+    "category": "mistry",
+    "name": "Mistry Gift Box 1",
+    "price": 90,
+    "description": "1X Mistry Gift Box"
+  },
+  {
+    "id": "mistry_5",
+    "category": "mistry",
+    "name": "5X Mistry Box",
+    "price": 490,
+    "description": "5X Mistry Gift Box"
+  },
+  {
+    "id": "mistry_10",
+    "category": "mistry",
+    "name": "10X Mistry Box",
+    "price": 900,
+    "description": "10X Mistry Gift Box"
+  },
+  {
+    "id": "mistry_22",
+    "category": "mistry",
+    "name": "22X Mistry Box",
+    "price": 900,
+    "description": "22X Mistry Gift Box"
+  },
+
+  {
+    "id": "offer_1",
+    "category": "offer",
+    "name": "🔥 Offer 1",
+    "price": 0,
+    "description": "Special Offer"
+  },
+  {
+    "id": "offer_2",
+    "category": "offer",
+    "name": "🔥 Offer 2",
+    "price": 0,
+    "description": "Special Offer"
+  },
+  {
+    "id": "offer_3",
+    "category": "offer",
+    "name": "🔥 Offer 3",
+    "price": 0,
+    "description": "Special Offer"
+  }
+]
