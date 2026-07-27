@@ -1,24 +1,45 @@
-const { Telegraf } = require("telegraf");
+const { Telegraf, session } = require("telegraf");
 const config = require("./config");
-const registerStart = require("./start");
-const registerAdmin = require("./admin");
 
-if (!config.BOT_TOKEN) {
-  console.error("BOT_TOKEN is missing.");
-  process.exit(1);
-}
+const { registerStart } = require("./start");
+const { registerAdmin } = require("./admin");
 
 const bot = new Telegraf(config.BOT_TOKEN);
+
+/* =========================================
+   SESSION
+========================================= */
+
+bot.use(session());
+
+/* =========================================
+   REGISTER MODULES
+========================================= */
 
 registerStart(bot);
 registerAdmin(bot);
 
-bot.action("topup", (ctx) => ctx.reply("💎 Top Up menu coming soon."));
-bot.action("packages", (ctx) => ctx.reply("📦 Packages menu coming soon."));
-bot.action("account", (ctx) => ctx.reply("👤 Account menu coming soon."));
+/* =========================================
+   BOT START
+========================================= */
 
-bot.launch();
-console.log("🤖 Free Fire TopUp Bot is running.");
+bot.launch(() => {
 
-process.once("SIGINT", () => bot.stop("SIGINT"));
-process.once("SIGTERM", () => bot.stop("SIGTERM"));
+    console.log("━━━━━━━━━━━━━━━━━━━━━━");
+    console.log("🤖 Free Fire Top-Up Bot");
+    console.log("✅ Bot Online");
+    console.log("━━━━━━━━━━━━━━━━━━━━━━");
+
+});
+
+/* =========================================
+   STOP BOT
+========================================= */
+
+process.once("SIGINT", () => {
+    bot.stop("SIGINT");
+});
+
+process.once("SIGTERM", () => {
+    bot.stop("SIGTERM");
+});
